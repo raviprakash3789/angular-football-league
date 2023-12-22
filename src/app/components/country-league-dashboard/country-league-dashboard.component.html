@@ -1,0 +1,7 @@
+<div class="league-dashboard-container">
+   <div  class="league-dashboard-inner-container">
+    <div class="league-title"><h2>FOOTBALL UPDATES</h2></div>
+    <app-country-list [countryListRecords]="countryListRecords" (countryLeagueRecord)="getCountryLeagueRecord($event)"></app-country-list>
+      <app-table-list  [LeagueResponseData]="tableRecord" [tableHeaders]="tableHeaders"></app-table-list>
+   </div>
+</div>

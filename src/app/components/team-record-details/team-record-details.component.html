@@ -1,0 +1,20 @@
+<div class="team-details-container">
+    <div  class="team-details-inner-container">
+        <table *ngIf="teamDetailsRecord && teamDetailsRecord.length>0">
+            <tbody>
+                <tr *ngFor = "let item of teamDetailsRecord">
+                    <td><img [src]="item.teams.home.logo" alt="logo"></td>
+                    <td>{{item.teams.home.name}}</td>
+                    <td>{{item.goals.home}}</td>
+                    <td>-</td>
+                    <td>{{item.goals.away}}</td>
+                    <td>{{item.teams.away.name}}</td>
+                    <td><img [src]="item.teams.away.logo" alt="logo"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="btn-container">
+        <button (click)="navigateToPreviousScreen()" id="navigateToPreviousScreen" class="btn-wrapper">Back</button>
+    </div>
+</div>

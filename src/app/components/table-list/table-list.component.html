@@ -1,0 +1,27 @@
+<div *ngIf="loading">Loading....</div>
+<ng-container *ngIf="!loading">
+<div class="table-container-wrapper" *ngIf="standingList && standingList?.length>0">
+    <table>
+        <thead>
+            <tr>
+             <th *ngFor="let item of tableHeaders;index as i" [id]="'header'+i">
+                {{item}}
+             </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor = "let item of standingList">
+                <td>{{item?.rank}}</td>
+                <td><img [src]="item?.team?.logo"></td>
+                <td (click)="leagueDetailsData(item)" class="team-name-wrapper">{{item?.team?.name}}</td>
+                <td>{{item?.all?.played}}</td>
+                <td>{{item?.all?.win}}</td>
+                <td>{{item?.all?.lose}}</td>
+                <td>{{item?.all?.draw}}</td>
+                <td>{{item?.goalsDiff}}</td>
+                <td>{{item?.points}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</ng-container>

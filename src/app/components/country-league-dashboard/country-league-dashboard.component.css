@@ -1,0 +1,13 @@
+.league-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.league-dashboard-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.league-dashboard-inner-container{
+    width: 80%;
+}

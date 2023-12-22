@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    width:12%;
+    padding: 8px;
+  }
+  td img {
+    width: 20%;
+  }
+  .team-name-wrapper{
+        cursor: pointer;
+  }
+  

@@ -1,0 +1,9 @@
+<div class="country-container">
+    <ul>
+        <li *ngFor = "let item of countryListRecords"  [ngClass] = "{'active':selectCountryName === item.countryName}">
+            <a (click) = "countrySelectionEvent(item)" [id]="item.countryName+'Select'">
+                {{item.countryName}}
+            </a>
+        </li>
+    </ul>
+</div>
