@@ -23,7 +23,6 @@ export class TableListComponent implements OnChanges ,OnInit {
   ngOnInit(): void {
     this.sharedService.loading.subscribe((val:boolean) => {
     this.loading = val;
-    console.log('loading',this.loading)
     })
   }
   leagueDetailsData(data:ILeagueDetails){
